@@ -13,7 +13,7 @@ function History() {
         setLoading(false);
       })
       .catch(err => {
-        console.log(err);
+        console.log("History fetch error:", err);
         setLoading(false);
       });
   }, []);
