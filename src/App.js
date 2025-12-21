@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import * as XLSX from "xlsx";
-
+import {Link} from "react-router-dom";
 function App() {
   const [msg, setMsg] = useState("");
   const [status, setStatus] = useState(false);
@@ -117,9 +117,12 @@ function App() {
           </p>
         )}
 
-        <a href="/history" className="mt-4 text-blue-900 underline font-medium">
+        
+
+        <Link to="/history" className="mt-4 text-blue-900 underline font-medium">
           View Email History
-        </a>
+        </Link>
+
       </div>
 
       <div className="bg-blue-300 p-6"></div>
