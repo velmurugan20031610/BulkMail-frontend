@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+📧 BulkMail – Bulk Email Sender Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+BulkMail is a full-stack MERN web application that allows users to send emails in bulk by uploading an Excel file containing email addresses. It is designed for simplicity, speed, and real-world usage.
 
-## Available Scripts
+🚀 Features
 
-In the project directory, you can run:
+📤 Upload Excel file (.xlsx) with email IDs
 
-### `npm start`
+✉️ Send bulk emails in one click
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📊 Automatically count total emails
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🕘 View email sending history
 
-### `npm test`
+🌐 Fully deployed (Frontend + Backend)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+☁️ Uses cloud services (Vercel, Render, MongoDB Atlas)
 
-### `npm run build`
+🛠️ Tech Stack
+Frontend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+React (Create React App)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Router DOM
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Axios
 
-### `npm run eject`
+Tailwind CSS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+XLSX (Excel file handling)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Backend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Node.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Express.js
 
-## Learn More
+Nodemailer (Email sending)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+MongoDB Atlas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Mongoose
 
-### Code Splitting
+Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Frontend: Vercel
 
-### Analyzing the Bundle Size
+Backend: Render
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Database: MongoDB Atlas
 
-### Making a Progressive Web App
+📸 How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+User enters the email message
 
-### Advanced Configuration
+Uploads an Excel file with email addresses
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+App reads emails from Excel
 
-### Deployment
+Backend sends emails one by one
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Email status is saved in database
 
-### `npm run build` fails to minify
+User can view email history
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🔗 Live Demo
+
+Frontend:
+👉 https://bulk-mail-frontend-alpha.vercel.app/
+
+Backend API:
+👉 https://bulkmail-backend-9e3h.onrender.com
+
+📂 Project Structure
+BulkMail/
+├── frontend/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── History.js
+│   │   ├── index.js
+│   └── package.json
+│
+├── backend/
+│   ├── index.js
+│   ├── models/
+│   └── package.json
